@@ -1,4 +1,4 @@
-﻿using Domain.Common.DTOs;
+﻿using Domain.Common.DTOs.SharedDTOs;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistance.Contexts;

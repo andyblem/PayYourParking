@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Domain.Common.DTOs;
+using Domain.Common.DTOs.ParkingTicketDTOs;
 using Domain.Entities;
 using System;
 using System.Collections.Generic;

@@ -1,4 +1,4 @@
-﻿using Domain.Common.DTOs;
+﻿using Domain.Common.DTOs.ParkingTicketDTOs;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Shared.Wrappers;

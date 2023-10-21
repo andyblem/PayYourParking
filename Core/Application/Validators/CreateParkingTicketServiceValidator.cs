@@ -1,4 +1,4 @@
-﻿using Application.Features;
+﻿using Application.Features.ParkingTickets;
 using FluentValidation;
 using System;
 using System.Collections.Generic;

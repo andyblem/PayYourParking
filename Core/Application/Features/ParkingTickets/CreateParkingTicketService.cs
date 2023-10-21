@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Domain.Common.DTOs;
+using Domain.Common.DTOs.ParkingTicketDTOs;
 using Domain.Entities;
 using MediatR;
 using Microsoft.Extensions.Configuration;
@@ -13,7 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Webdev.Core;
 
-namespace Application.Features
+namespace Application.Features.ParkingTickets
 {
     public class CreateParkingTicketService : IRequest<Response<CreateParkingTicketResultDTO>>
     {
@@ -71,7 +71,7 @@ namespace Application.Features
 
                 // map to response
                 var createParkingTicketResult = _mapper.Map<CreateParkingTicketResultDTO>(parkingTicket);
-                
+
                 // return result
                 return new Response<CreateParkingTicketResultDTO>(createParkingTicketResult);
             }

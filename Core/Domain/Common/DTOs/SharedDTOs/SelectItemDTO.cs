@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Common.DTOs
+namespace Domain.Common.DTOs.SharedDTOs
 {
     public class SelectItemDTO<T>
     {

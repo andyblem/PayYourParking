@@ -1,4 +1,4 @@
-﻿using Domain.Common.DTOs;
+﻿using Domain.Common.DTOs.ParkingTicketDTOs;
 using MediatR;
 using Persistance.CQRS.CityCouncilCQRS.Queries;
 using Persistance.CQRS.PaymentPlatformCQRS.Queries;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features
+namespace Application.Features.ParkingTickets
 {
     public class GetCreateParkingTicketInitDataService : IRequest<Response<CreateParkingTicketInitDataDTO>>
     {

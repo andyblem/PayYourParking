@@ -1,11 +1,12 @@
-﻿using MediatR;
+﻿using Domain.Common.DTOs.SharedDTOs;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Common.DTOs
+namespace Domain.Common.DTOs.ParkingTicketDTOs
 {
     public class CreateParkingTicketInitDataDTO
     {
