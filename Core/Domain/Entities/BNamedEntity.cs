@@ -8,5 +8,6 @@ namespace Domain.Entities
 {
     public class BNamedEntity : BEntity
     {
+        public string? Name { get; set; }
     }
 }
