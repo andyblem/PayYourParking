@@ -1,5 +1,6 @@
 ﻿using Domain.Common.DTOs.ParkingTicketDTOs;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Persistance.Contexts;
 using System;
 using System.Collections.Generic;
@@ -36,7 +37,7 @@ namespace Persistance.CQRS.ParkingTicketCQRS.Queries
 
                     CarRegistrationNumber = pT.CarRegistrationNumber,
                     CityCouncil = pT.CityCouncil.Name,
-                    PaymentPlatform = pT.ParkingTicketPayment.MobileMoney,
+                    PaymentPlatform = pT.ParkingTicketPayment.PaymentPlatform,
 
                     EndTime = (DateTime)pT.EndTime,
                     StartTime = (DateTime)pT.StartTime,

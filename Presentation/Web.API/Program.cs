@@ -73,7 +73,7 @@ app.UseHealthChecks("/health");
 app.MapControllers();
 
 // default reply for testing
-app.MapGet("/", () => "Hello You have reached Pay Your Parking WebAPI!");
+app.MapGet("/", () => "Hello, You have reached Pay Your Parking WebAPI!!!");
 
 // start app
 try

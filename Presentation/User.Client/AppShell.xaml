@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="User.Client.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:User.Client.Views"
+    Shell.FlyoutBehavior="Flyout">
+
+    <!--FlyoutHeader-->
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <StackLayout BackgroundColor="BlueViolet"
+                  HeightRequest="200"
+                  Padding="10,5,5,10"
+                  Spacing="5">
+                <Label FontSize="24"
+                       Text="Pay Your Parking"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Start"
+                       VerticalTextAlignment="Start" />
+            </StackLayout>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    
+    <!--FlyoutItems-->
+    <FlyoutItem Title="Home">
+        <ShellContent ContentTemplate="{DataTemplate local:HomePage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Browse">
+        <ShellContent ContentTemplate="{DataTemplate local:BrowseParkingTicketsPage}"/>
+    </FlyoutItem>
+
+</Shell>

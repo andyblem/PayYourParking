@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="User.Client.Views.HomePage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Pay Your Parking"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Pay your parking ticket for you vehicle"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Pay your parking ticket for you vehicle"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="This is a proof of concept"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Pay your parking ticket for you vehicle"
+                FontSize="12"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
